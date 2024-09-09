@@ -36,35 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* StarryNight.js Component CSS */
-/* src/App.css */
-
-#sky {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.star {
-  fill: white;
-  stroke: none;
-  opacity: 0.7;
-}
-
-#shootingstars {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.wish {
-  position: absolute;
-  width: 0px;
-  height: 2px;
-  background: white;
-  opacity: 0;
-  pointer-events: none;
-}
