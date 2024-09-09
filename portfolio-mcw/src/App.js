@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import "./App.css";
+import StarrySky from "./components/StarryNight"; // Import the StarrySky component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="Portfolio">
+      <header className="Portfolio-header">
+        <h1>Portfolio</h1>
+        <StarrySky /> {/* Use the StarrySky component */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
