@@ -36,3 +36,7 @@ body {
   overflow: hidden;
 }
 
+
+#root {
+  min-height: 400vh; /* Adjust this value to add more scrollable height */
+}
