@@ -9,11 +9,12 @@ function App() {
       <StarrySky />
       <NavBar />
       <div className='right'>
-        
+
       </div>
       <div className='left'>
         
       </div>
+      
     </div>
   );
 }
