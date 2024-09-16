@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(black, rgb(12, 12, 81) 100%); 
+  font-family: 'Catamaran', sans-serif;
 }
 
 #sky {
