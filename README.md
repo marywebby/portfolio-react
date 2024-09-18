@@ -7,3 +7,4 @@
 for reference later :
 https://tailwindcss.com/docs/grid-row
 https://brittanychiang.com/#about
+https://ui.aceternity.com/components/floating-dock
