@@ -12,10 +12,10 @@ function App() {
         <nav className="row-span-3">
           
         </nav>
-        <div className="col-span-2 text-white font-catamaran">
+        <div className="col-span-2 text-white font-catamaran p-36">
           about me
         </div>
-        <div className="row-span-2 col-span-2 text-white font-catamaran">
+        <div className="row-span-2 col-span-2 text-white font-catamaran p-36">
           work history
         </div>
       </div>
