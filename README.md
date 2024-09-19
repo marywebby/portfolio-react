@@ -5,6 +5,6 @@
 ### Aceternity UI https://ui.aceternity.com/
 
 for reference later :
-https://tailwindcss.com/docs/grid-row
-https://brittanychiang.com/#about
-https://ui.aceternity.com/components/floating-dock
+- https://tailwindcss.com/docs/grid-row
+- https://brittanychiang.com/#about
+- https://ui.aceternity.com/components/floating-dock
