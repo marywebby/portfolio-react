@@ -3,6 +3,10 @@
 @import 'tailwindcss/utilities';
 
 body {
-    background: linear-gradient(to right, black, rgb(12, 12, 81) 100%); 
+    background: linear-gradient(black, rgb(12, 12, 81) 100%);
   }
+
+body {
+  @apply font-catamaran;
+}
   

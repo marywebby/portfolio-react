@@ -8,6 +8,9 @@ module.exports = {
       backgroundImage: {
         'starry-sky': 'linear-gradient(to right, black, rgb(12, 12, 81) 100%)',
       },
+      fontFamily: {
+        catamaran: ['Catamaran', 'sans-serif'],
+      },
     },
   },
   corePlugins: {

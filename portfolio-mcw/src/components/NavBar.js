@@ -9,7 +9,7 @@ import {
 import { cn } from "../lib/utils";
 import { Link } from "react-router-dom";
 
-export const NavBar = ({ navItems, className }) => {
+export const NavBar = ({ navItems = [], className = "" }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
 
@@ -31,7 +31,7 @@ export const NavBar = ({ navItems, className }) => {
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-            "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-4 pl-6 py-2 items-center justify-center space-x-4",
+          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-4 pl-6 py-2 items-center justify-center space-x-4",
           className
         )}
       >
@@ -48,40 +48,36 @@ export const NavBar = ({ navItems, className }) => {
           </Link>
         ))}
         <button
-        className="bg-black text-lg font-medium text-white border border-neutral-200 dark:border-white/[0.2] px-6 py-4 rounded-full relative hover:bg-gray-800"
+          className="bg-black text-lg font-medium text-white border border-neutral-200 dark:border-white/[0.2] px-6 py-4 rounded-full relative hover:bg-gray-800"
         >
-        <span>About Me</span>
-        <span
+          <span>About Me</span>
+          <span
             className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px"
-        />
+          />
         </button>
         <button
-        className="bg-black text-lg font-medium text-white border border-neutral-200 dark:border-white/[0.2] px-6 py-4 rounded-full relative hover:bg-gray-800"
+          className="bg-black text-lg font-medium text-white border border-neutral-200 dark:border-white/[0.2] px-6 py-4 rounded-full relative hover:bg-gray-800"
         >
-        <span>Projects</span>
-        <span
+          <span>Projects</span>
+          <span
             className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px"
-        />
+          />
         </button>
       </motion.div>
     </AnimatePresence>
   );
 };
 
+// PropTypes can stay as they are, if needed
 NavBar.propTypes = {
   navItems: PropTypes.arrayOf(
     PropTypes.shape({
-      link: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      icon: PropTypes.element.isRequired
+      link: PropTypes.string,
+      name: PropTypes.string,
+      icon: PropTypes.element
     })
-  ).isRequired,
+  ),
   className: PropTypes.string
 };
-
-NavBar.defaultProps = {
-  navItems: []
-};
-
 
 export default NavBar;

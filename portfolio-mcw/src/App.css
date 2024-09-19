@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(to right, black, rgb(12, 12, 81) 100%); 
+  background: linear-gradient(black, rgb(12, 12, 81) 100%); 
+  font-family: 'Catamaran', sans-serif;
 }
 
 #sky {
@@ -38,5 +39,5 @@ body {
 
 
 #root {
-  min-height: 400vh; /* Adjust this value to add more scrollable height */
+  min-height: 200vh; /* Adjust this value to add more scrollable height */
 }
