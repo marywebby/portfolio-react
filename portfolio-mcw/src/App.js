@@ -1,24 +1,14 @@
 import React from 'react';
 import StarrySky from './components/StarrySky';
-// import NavBar from './components/NavBar';
+import Header from './components/Header';
 import './App.css';
 import './css/tailwind.css';
 
 function App() {
   return (
-    <div>
+    <div className='background: radial-gradient(600px at 966px 268px, rgba(29, 78, 216, 0.15), transparent 80%)'>
       <StarrySky />
-      <div className="grid grid-rows-3 grid-flow-col gap-4">
-        <nav className="row-span-3">
-          
-        </nav>
-        <div className="col-span-2 text-white font-catamaran p-36">
-          about me
-        </div>
-        <div className="row-span-2 col-span-2 text-white font-catamaran p-36">
-          work history
-        </div>
-      </div>
+      <Header />
     </div>
   );
 }
