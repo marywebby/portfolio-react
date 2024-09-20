@@ -11,6 +11,11 @@ module.exports = {
       fontFamily: {
         catamaran: ['Catamaran', 'sans-serif'],
       },
+      colors: {
+        'white': {
+          75: '#E2E8F0',
+        },
+      },
     },
   },
   corePlugins: {
