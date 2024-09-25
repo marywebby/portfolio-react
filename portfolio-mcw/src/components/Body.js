@@ -1,4 +1,5 @@
 import React from 'react';
+import Expearience from './Expearience';
 
 const Body = () => {
   return (
@@ -39,6 +40,7 @@ const Body = () => {
               </p>
             </div>
           </section>
+          <Expearience />
         </main>
       </div>
     </div>
