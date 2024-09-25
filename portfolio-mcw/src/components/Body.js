@@ -1,5 +1,5 @@
 import React from 'react';
-import Expearience from './Expearience';
+import Experience from './Experience';
 
 const Body = () => {
   return (
@@ -40,7 +40,7 @@ const Body = () => {
               </p>
             </div>
           </section>
-          <Expearience />
+          <Experience />
         </main>
       </div>
     </div>
