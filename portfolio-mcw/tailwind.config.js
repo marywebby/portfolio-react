@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         catamaran: ['Catamaran', 'sans-serif'],
+        noto: ['Noto Sans', 'sans-serif']
       },
       colors: {
         'white': {
