@@ -26,6 +26,6 @@ carosel :
 - https://codepen.io/NiklasKnaack/pen/abrOMLY
 
 hand written signing :
-- https://codepen.io/kiranpate1/pen/ExBpaeW
+- https://codepen.io/kiranpate1/pen/ExBpaeWpage
 
-Navbar components 
+Navbar components :
