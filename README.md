@@ -28,6 +28,5 @@ carosel :
 hand written signing :
 - https://codepen.io/kiranpate1/pen/ExBpaeWpage
 
-Navbar components :
-- 
-- 
+paralax starts :
+- https://codepen.io/sarazond/pen/LYGbwj
