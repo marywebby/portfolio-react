@@ -3,6 +3,7 @@
 ### React https://react.dev/
 ### Tailwind https://tailwindcss.com/docs
 ### Aceternity UI https://ui.aceternity.com/
+### Codepen
 
 for reference later :
 - https://tailwindcss.com/docs/grid-row
