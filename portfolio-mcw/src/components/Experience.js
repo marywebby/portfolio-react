@@ -31,7 +31,7 @@ const Experience = () => {
                   </a>
                 </h3>
                 <p className='mt-2 text-lg leading-normal text-slate-400'>
-                  Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra. 
+                  Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra.
                 </p>
                 <ul className='mt-2 flex flex-wrap p-0 list-none' aria-label='Technologies used'>
                   <li className='mr-1.5 mt-2'>
@@ -79,7 +79,7 @@ const Experience = () => {
                   </a>
                 </h3>
                 <p className='mt-2 text-lg leading-normal text-slate-400'>
-                  Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra. 
+                  Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra.
                 </p>
                 <ul className='mt-2 flex flex-wrap p-0 list-none' aria-label='Technologies used'>
                   <li className='mr-1.5 mt-2'>
@@ -127,7 +127,7 @@ const Experience = () => {
                   </a>
                 </h3>
                 <p className='mt-2 text-lg leading-normal text-slate-400'>
-                  Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra. 
+                  Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra.
                 </p>
                 <ul className='mt-2 flex flex-wrap p-0 list-none' aria-label='Technologies used'>
                   <li className='mr-1.5 mt-2'>
@@ -155,6 +155,11 @@ const Experience = () => {
             </div>
           </li>
         </ol>
+        <div className='mt-12'>
+          <a className='inline-flex items-baseline font-medium leading-tight hover:text-teal-300 focus-visible:text-teal-300 text-slate-200 group/link text-base underline' href='/resume.pdf' target='_blank' rel='noreferrer noopener' aria-label='View Full Résumé (opens in a new tab)'>
+            View Full Résumé
+          </a>
+        </div>
       </div>
     </section>
   );
