@@ -1,4 +1,5 @@
 import React from 'react';
+import lineupImage from './images/lineup.png';
 
 const Projects = () => {
   return (
@@ -25,7 +26,7 @@ const Projects = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu
                 </p>
               </div>
-              <img alt='Build a Skincare Generated Routine with LineUp' loading='lazy' width='200' height='48' decoding='async' data-nimj='1' className='rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1' stlye='color:transparent' srcSet=''></img>
+              <img alt='Build a Skincare Generated Routine with LineUp' loading='lazy' width='200' height='48' decoding='async' data-nimj='1' className='rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1' style={{ color: 'transparent' }} src={lineupImage}></img>
             </div>
           </li>
         </ul>
