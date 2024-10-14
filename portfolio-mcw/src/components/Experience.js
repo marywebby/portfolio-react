@@ -33,7 +33,7 @@ const Experience = () => {
                 <p className='mt-2 text-lg leading-normal text-slate-400'>
                   Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra.
                 </p>
-                <ul className='mt-2 flex flex-wrap p-0' aria-label='Technologies used'>
+                <ul className='mt-2 flex flex-wrap p-0 list-none' aria-label='Technologies used'>
                   <li className='mr-1.5 mt-2'>
                     <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-sm font-medium leading-5 text-teal-300'>
                       Ruby on Rails
@@ -81,7 +81,7 @@ const Experience = () => {
                 <p className='mt-2 text-lg leading-normal text-slate-400'>
                   Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra.
                 </p>
-                <ul className='mt-2 flex flex-wrap p-0' aria-label='Technologies used'>
+                <ul className='mt-2 flex flex-wrap p-0 list-none' aria-label='Technologies used'>
                   <li className='mr-1.5 mt-2'>
                     <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-sm font-medium leading-5 text-teal-300'>
                       Ruby on Rails
@@ -129,7 +129,7 @@ const Experience = () => {
                 <p className='mt-2 text-lg leading-normal text-slate-400'>
                   Sociosqu hac a luctus neque augue etiam efficitur porta. Fermentum ridiculus ut tortor elit vitae condimentum est. Vehicula neque suscipit sagittis montes placerat per litora. Netus condimentum sodales euismod lorem elit lacinia nullam. Lorem habitasse curabitur praesent metus aptent, cras hendrerit pharetra.
                 </p>
-                <ul className='mt-2 flex flex-wrap p-0' aria-label='Technologies used'>
+                <ul className='mt-2 flex flex-wrap p-0 list-none' aria-label='Technologies used'>
                   <li className='mr-1.5 mt-2'>
                     <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-sm font-medium leading-5 text-teal-300'>
                       Ruby on Rails
