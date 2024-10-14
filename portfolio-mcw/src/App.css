@@ -2,6 +2,8 @@ body {
   background: linear-gradient(black, rgb(12, 12, 81) 100%); 
   font-family: 'Catamaran', sans-serif;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 #sky {
@@ -16,8 +18,8 @@ body {
 #shootingstars {
   margin: 0;
   padding: 0;
-  width: 150vh;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   overflow: hidden;
   transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
