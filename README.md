@@ -3,6 +3,7 @@
 ### React https://react.dev/
 ### Tailwind https://tailwindcss.com/docs
 ### Aceternity UI https://ui.aceternity.com/
+### Codepen
 
 for reference later :
 - https://tailwindcss.com/docs/grid-row
@@ -26,4 +27,7 @@ carosel :
 - https://codepen.io/NiklasKnaack/pen/abrOMLY
 
 hand written signing :
-- https://codepen.io/kiranpate1/pen/ExBpaeW
+- https://codepen.io/kiranpate1/pen/ExBpaeWpage
+
+paralax starts :
+- https://codepen.io/sarazond/pen/LYGbwj
