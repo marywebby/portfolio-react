@@ -1,4 +1,5 @@
 import React from 'react';
+import LinkBar from './LinkBar'
 
 const About = () => {
   return (
