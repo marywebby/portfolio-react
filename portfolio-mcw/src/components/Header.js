@@ -1,11 +1,12 @@
 // Header.js
 import React from 'react';
+import LinkBar from './LinkBar'
 
 const Header = () => {
   return (
-    <header className="sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between">
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl pt-24'>
+        <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>
           Mary Webby
         </h1>
         <h2 className='mt-3 text-lg font-bold uppercase tracking-tight text-white-75 sm:text-xl'>
@@ -17,6 +18,7 @@ const Header = () => {
         <nav className='nav hidden lg:block' aria-label='In-page jump links'>
         </nav>
       </div>
+      <LinkBar />
     </header>
   );
 };
