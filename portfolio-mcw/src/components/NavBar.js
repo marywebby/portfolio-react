@@ -1,83 +1,53 @@
-import PropTypes from 'prop-types';
-import React, { useState } from "react";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
-import { cn } from "../lib/utils";
-import { Link } from "react-router-dom";
+import React from "react";
 
-export const NavBar = ({ navItems = [], className = "" }) => {
-  const { scrollYProgress } = useScroll();
-  const [visible, setVisible] = useState(false);
-
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
-    if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious();
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
-      } else {
-        setVisible(direction < 0);
-      }
+const NavBar = () => {
+  const handleSmoothScroll = (e, target) => {
+    e.preventDefault(); // Prevent default anchor click behavior
+    const element = document.getElementById(target); // Get the target element
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the element
     }
-  });
+  };
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        initial={{ opacity: 1, y: -100 }}
-        animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
-        transition={{ duration: 0.2 }}
-        className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-4 pl-6 py-2 items-center justify-center space-x-4",
-          className
-        )}
-      >
-        {navItems.map((navItem, idx) => (
-          <Link
-            key={`link=${idx}`}
-            to={navItem.link}
-            className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )}
+    <nav className="nav hidden lg:block" aria-label="In-page jump links">
+      <ul className="mt-16 w-max list-none pl-0">
+        <li>
+          <a
+            className="group flex items-center py-3 active"
+            onClick={(e) => handleSmoothScroll(e, 'about')} // Prevent default and handle smooth scroll
+            href="#about" // Keep href for accessibility
+            aria-label="#about"
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </Link>
-        ))}
-        <button
-          className="bg-black text-lg font-medium text-white border border-neutral-200 dark:border-white/[0.2] px-6 py-4 rounded-full relative hover:bg-gray-800"
-        >
-          <span>About Me</span>
-          <span
-            className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px"
-          />
-        </button>
-        <button
-          className="bg-black text-lg font-medium text-white border border-neutral-200 dark:border-white/[0.2] px-6 py-4 rounded-full relative hover:bg-gray-800"
-        >
-          <span>Projects</span>
-          <span
-            className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px"
-          />
-        </button>
-      </motion.div>
-    </AnimatePresence>
+            <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+            <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="group flex items-center py-3 active"
+            onClick={(e) => handleSmoothScroll(e, 'experience')}
+            href="#experience" // Keep href for accessibility
+            aria-label="#experience"
+          >
+            <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+            <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="group flex items-center py-3 active"
+            onClick={(e) => handleSmoothScroll(e, 'projects')}
+            href="#projects" // Keep href for accessibility
+            aria-label="#projects"
+          >
+            <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+            <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
-};
-
-// PropTypes can stay as they are, if needed
-NavBar.propTypes = {
-  navItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      link: PropTypes.string,
-      name: PropTypes.string,
-      icon: PropTypes.element
-    })
-  ),
-  className: PropTypes.string
 };
 
 export default NavBar;
