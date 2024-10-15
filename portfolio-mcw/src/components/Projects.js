@@ -4,9 +4,15 @@ import lineupImage from './images/generating-lineup.gif';
 const projects = [
   {
     title: 'LineUp - Routine Generator',
-    description: 'Generate a personalized routine with LineUp, powered by APIs. This tool helps users streamline their routines with ease.',
+    description: 'Generate a personalized routine with LineUp. This tool helps users streamline their routines with ease.',
     imageSrc: lineupImage, // Replace this with the correct image import or path
     link: 'https://github.com/marywebby/lineup',
+  }, 
+  {
+    title: 'GigIt',
+    description: 'Showcase your side-gigs and manage external payment methods with GigIt. This tool will allow users to get paid for their hobbies & side projects, letting family and friends easily book them for their services.',
+    imageSrc: , 
+    link: 'https://github.com/marywebby/GigIt'
   }
 
 ];
