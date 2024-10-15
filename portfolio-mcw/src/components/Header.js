@@ -1,5 +1,6 @@
 // Header.js
 import React from 'react';
+import NavBar from './NavBar';
 import LinkBar from './LinkBar'
 
 const Header = () => {
@@ -15,8 +16,7 @@ const Header = () => {
         <p className='mt-4 max-w-sm leading-normal text-gray-400'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <nav className='nav hidden lg:block' aria-label='In-page jump links'>
-        </nav>
+        <NavBar />
       </div>
       <LinkBar />
     </header>
