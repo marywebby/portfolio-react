@@ -10,13 +10,10 @@ const About = () => {
     </div>
     <div>
       <p className='mb-4'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu
+        Motivated and adaptable professional with a background in software development and a passion for technology and innovation. Possess a deep understanding of full-stack technologies with experience collaborating in diverse teams to deliver high-impact projects. 
       </p>
       <p className='mb-4'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu
-      </p>
-      <p className='mb-4'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu
+        Bringing a strong analytical mindset and excellent interpersonal skills, seeking new challenges to further develop skills and contribute to innovative projects. Thrives in dynamic environments, applying creativity and problem-solving abilities to drive positive change.
       </p>
     </div>
   </section>
